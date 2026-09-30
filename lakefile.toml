@@ -1,0 +1,6 @@
+name = "project1"
+version = "0.1.0"
+defaultTargets = ["NaturalNumbers"]
+
+[[lean_lib]]
+name = "NaturalNumbers"
