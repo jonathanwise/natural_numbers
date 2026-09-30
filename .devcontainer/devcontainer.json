@@ -1,0 +1,13 @@
+{
+  "name": "Lean 4 (no Mathlib)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["leanprover.lean4"]
+    }
+  }
+}
