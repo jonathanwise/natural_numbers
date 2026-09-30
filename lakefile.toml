@@ -1,6 +1,37 @@
 name = "project1"
 version = "0.1.0"
-defaultTargets = ["NaturalNumbers"]
+defaultTargets = ["Project1"]
 
 [[lean_lib]]
-name = "NaturalNumbers"
+name = "Project1"
+roots = ["NaturalNumbers",
+         "defs",
+         "zero_plus",
+         "succ_plus",
+         "plus_zero",
+         "plus_succ",
+         "plus_one",
+         "plus_comm",
+         "plus_assoc",
+         "plus_assoc_example",
+         "zero_times",
+         "succ_times",
+         "times_zero",
+         "times_succ",
+         "times_one",
+         "one_times",
+         "times_comm",
+         "times_left_distrib",
+         "times_right_distrib",
+         "times_assoc",
+         "f",
+         "g",
+         "disj_comm",
+         "sum_comm",
+         "propositional_example_1",
+         "conj_comm",
+         "conj_assoc",
+         "modus_ponens",
+         "propositional_example_2",
+         "modus_tollens",
+         "thms"]

@@ -1,0 +1,15 @@
+import plus_one
+import plus_assoc_example
+import times_one
+import one_times
+import times_assoc
+import f
+import g
+import disj_comm
+import sum_comm
+import propositional_example_1
+import conj_comm
+import conj_assoc
+import modus_ponens
+import propositional_example_2
+import modus_tollens
