@@ -1,6 +1,20 @@
 
 
-notation "ℕ" => Nat
+-- notation "ℕ" => Nat
+
+inductive ℕ where
+  | zero : ℕ
+  | succ : ℕ → ℕ 
+
+namespace ℕ
+protected def ofNat : Nat → ℕ
+  | 0          => .zero
+  | Nat.succ n => .succ (ℕ.ofNat n)
+
+@[default_instance 200]
+instance (n : Nat) : OfNat ℕ n where
+  ofNat := ℕ.ofNat n
+end ℕ
 
 
 def plus (m n : ℕ) : ℕ := match m with
@@ -20,4 +34,5 @@ def power (m n : ℕ) : ℕ := match n with
   | .succ n => m * power m n
 
 local infixl:75 (priority := high) " ^ " => power
+
 
